@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.gift-card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.gift-card:hover {
+    transform: translateY(-5px);
+}
+
+.gift-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-gift {
+    background-color: #f8b195;
+    border: none;
+    color: white;
+}
+
+.btn-gift:hover {
+    background-color: #f67280;
+}
+.tit{
+    font-family: 'Playwrite AU NSW', cursive;
+}
+.lead{
+    font-family: 'Libertinus Sans', serif;
+}
