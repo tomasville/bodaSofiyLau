@@ -1,6 +1,150 @@
+/* Por defecto, oculta la big-flower en escritorio */
+.big-flower {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body, header {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .header-flower {
+        display: block;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .big-flower {
+        display: block !important;
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: static;
+        z-index: 1;
+    }
+    .header-content {
+        margin-top: 0 !important;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        background: none;
+        position: relative;
+        z-index: 2;
+    }
+    .titulo-personalizado {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .flower {
+        display: none !important;
+    }
+}
+@media (max-width: 600px) {
+    .header-flower {
+        flex-direction: column;
+        align-items: center;
+        min-height: unset;
+        padding: 0 0 1rem 0;
+    }
+    .header-content {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .titulo-personalizado {
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+    }
+    .lead {
+        font-size: 0.95rem;
+    }
+    .big-flower {
+        display: block !important;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        z-index: 100;
+    }
+    .header-content {
+        margin-top: 45vw; /* Ajusta este valor según la altura real de tu imagen */
+    }
+}
+/* Mostrar solo las flores chicas en escritorio y la grande en móvil */
+.big-flower {
+    display: none;
+}
+
+/* Por defecto, oculta la big-flower en escritorio */
+.big-flower {
+    display: none;
+}
+
+/* Mobile: muestra la big-flower y ajusta el header */
+@media (max-width: 600px) {
+    body, header {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .big-flower {
+        display: block !important;
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        /* NO position: fixed */
+    }
+    .header-content {
+        margin-top: 0 !important; /* Sin espacio arriba */
+        padding: 1.2rem 1rem 1rem 1rem;
+        text-align: center;
+        background: none;
+        position: relative;
+        z-index: 1;
+        font-size: 0.95rem;
+        padding-top: 0;
+    }
+    .titulo-personalizado {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .flower {
+        display: none !important;
+    }
+}
+@font-face {
+    font-family: 'High Spirited';
+    src: url('img/high_spirited/High Spirited.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.flower{
+    width: 8%;
+    height: auto;
+    margin: 0 200px;
+
+}
+
+.titulo-personalizado {
+    font-family: 'High Spirited', cursive, sans-serif;
+    font-size: 80px;
+}
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    font-family: 'EB Garamond', serif;
+    color: #5b4b45;
 }
 
 .gift-card {
@@ -18,21 +162,60 @@ body {
 }
 
 .btn-gift {
-    background-color: #f8b195;
+    background-color: #d6c4ab;
     border: none;
     color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .btn-gift:hover {
-    background-color: #f67280;
+    background-color: #928675;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 .tit{
-    font-family: 'Playwrite AU NSW', cursive;
+    
+
+    color: #5b4b45;
 }
 .lead{
-    font-family: 'Libertinus Sans', serif;
+    font-family: 'EB Garamond', serif;
+    color: #5b4b45;
 }
 
 .fondo {
     background-color: #ca5526;
+}
+
+header{
+    background-image: url('img/LINEN.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    font-size: 20px;
+}
+.firma{
+    width: 200px;
+    height: auto;
+}
+@font-face {
+    font-family: 'High Spirited';
+    src: url(https://www.dafont.com/es/high-spirited.font);
+}
+
+
+.copy-cvu {
+    
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    
+
 }
