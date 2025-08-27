@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     // Selecciona todos los botones "Regalar"
-    const buttons = document.querySelectorAll('.btn.btn-primary');
+    const buttons = document.querySelectorAll('.btn-gift');
     buttons.forEach((btn, idx) => {
         btn.addEventListener('click', function () {
             // Rellena el modal con la info del regalo
@@ -38,4 +38,20 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.show();
         });
     });
+    // Funcionalidad para copiar el CVU al portapapeles
+    document.addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('copy-cvu')) {
+            const cvu = '0000003100098515211336';
+            navigator.clipboard.writeText(cvu).then(function() {
+                e.target.textContent = '¡Copiado!';
+                setTimeout(() => {
+                    e.target.textContent = 'Copiar CVU';
+                }, 1500);
+            });
+        }
+    });
 });
+
+
+
+
